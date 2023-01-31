@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "64f22535-7f0c-4214-855e-44cdd5f7dd0f",
+		"name": "Requisições Pessoas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18581924"
+	},
+	"item": [
+		{
+			"name": "Get All Pessoas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/pessoa/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"pessoa",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Id Pessoas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/pessoa/find/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"pessoa",
+						"find",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Pessoas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"João\",\r\n    \"cpf\": 25646559473,\r\n    \"rg\": 9821115247,\r\n    \"dataNasc\": \"2001-12-03T10:15:30\",\r\n    \"estadoCiv\": \"Solteiro\",\r\n    \"tel\": 1125215475,\r\n    \"email\": \"joao@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/pessoa/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"pessoa",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put Pessoas",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"João\",\r\n    \"cpf\": 25646559473,\r\n    \"rg\": 9821115247,\r\n    \"dataNasc\": \"2001-12-03T10:15:30\",\r\n    \"estadoCiv\": \"Casado\",\r\n    \"tel\": 1125215475,\r\n    \"email\": \"joaoteste@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/pessoa/update/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"pessoa",
+						"update",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Pessoas",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/pessoa/delete/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"pessoa",
+						"delete",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
